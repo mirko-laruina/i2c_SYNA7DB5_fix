@@ -4,7 +4,7 @@
 
 This shell script has been developed to fix an issue with a Synaptics touchpad ( `06CB:7DB7` ) which, when set to communicate over i2c (usually called "Advanced mode" in the BIOS settings), doesn't work properly on Linux. In my case, I was unable to move the cursor at all.
 
-A common solution, which didn't work out for me, is reloading the driver. Since this touchpad uses hid_multitouch, the commands would be:
+A common solution, which didn't work out for me, is reloading the driver. Since this touchpad uses `hid_multitouch`, the commands would be:
 
 ```
 modprobe -r hid_multitouch
